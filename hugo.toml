@@ -1,0 +1,9 @@
+baseURL = 'https://sssessions.com/'
+languageCode = 'en-us'
+title = 'SSSessions'
+theme = 'nostyleplease'
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe = true
