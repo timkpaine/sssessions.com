@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<header>
+    <h1>{{ $.Site.Title }}</h1>
+    {{- if $.Site.Params.theme_config.show_description -}}
+        <p>{{ $.Site.Params.description }}</p>
+    {{- end -}}
+</header>
+
+{{ .Content }}
+<h4>A pick of my favorite singer/songwriter live sessions</h4>
+{{- if $.Site.Data.menu.post_list -}}
+{{ partial "post_list.html" (dict "context" . "section" $.Site.Data.menu.post_list.section "limit" $.Site.Data.menu.post_list.limit "show_more" $.Site.Data.menu.post_list.show_more "show_more_text" $.Site.Data.menu.post_list.show_more_text "show_more_url" $.Site.Data.menu.post_list.show_more_url) -}}
+{{- end -}}
+
+<!-- {{ partial "menu_item.html" (dict "context" . "collection" $.Site.Data.menu.entries) }} -->
+
+{{ end }}

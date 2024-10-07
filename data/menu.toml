@@ -1,12 +1,7 @@
 [[entries]]
-title = "A pick of my favorite singer/songwriter live sessions"
 
-  [entries.post_list]
-  limit = 100
-  show_more = true
-  show_more_text = "See archive..."
-  show_more_url = "posts"
-
-[[entries]]
-title = "rss"
-url = "index.xml"
+[post_list]
+limit = 100
+show_more = true
+show_more_text = "See archive..."
+show_more_url = "posts"
